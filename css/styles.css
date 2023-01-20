@@ -74,15 +74,14 @@ section {
 }
 
 .home {
-  width: 100%;
+  /* width: 100%; */
   min-height: 90vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1rf);
-  grid-rap: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.home-img {
+.home-img img{
   max-width: 100%;
   width: 600px;
   height: auto;
@@ -109,4 +108,31 @@ section {
 .btn:hover {
   transform: scale(1.2) translateY(10px);
   transition: 0.4s;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 100%;
+  width: 480px;
+  height: auto;
+}
+
+.about-text span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.about h2 {
+  font-size: var(--h2-font);
+}
+
+.about-text p {
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
 }
